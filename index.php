@@ -41,14 +41,14 @@
        			<fieldset>
                 	<div data-role="fieldcontain">
         				<label for="username">Username:</label>
-        				<input type="text" name="username" id="username" value="" />
+        				<input type="text" name="username" id="username" value="" placeholder="Username" />
         			</div>
                     <div data-role="fieldcontain">
                     	<label for="password">Password:</label>
         				<input type="password" name="password" id="password" value="" />
                     </div>
                     &nbsp;
-        			<input type="submit" value="Login" />
+        			<input type="submit" value="login" />
          		</fieldset>
             </form>
 		</div>

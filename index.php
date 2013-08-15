@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/_G/m/jquery/jquery.mobile-1.3.2.min.css" type="text/css" />
     <script type="text/javascript" src="/_G/m/jquery/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/_G/m/jquery/jquery.mobile-1.3.2.min.js"></script>
+    <script src="/_G/m/pers.js"></script>
 </head> 
 <body> 
  
@@ -36,16 +37,39 @@
    	<div data-role="content">
     	<div data-role="content" data-inset="true">
     		<h3>Autenticazione operatore</h3>
-            <form action="auth.php" method="post" id="form-login">
+            <form id="form-login">
        			<fieldset>
-        			<label for="username">Username:</label>
-        			<input type="text" name="username" id="username" value="" />
-        			<label for="password">Password:</label>
-        			<input type="password" name="password" id="password" value="" />
+                	<div data-role="fieldcontain">
+        				<label for="username">Username:</label>
+        				<input type="text" name="username" id="username" value="" />
+        			</div>
+                    <div data-role="fieldcontain">
+                    	<label for="password">Password:</label>
+        				<input type="password" name="password" id="password" value="" />
+                    </div>
                     &nbsp;
         			<input type="submit" value="Login" />
          		</fieldset>
             </form>
+		</div>
+	</div>
+    
+   	<div data-role="footer">
+        <h4>footer - footer - footer</h4>
+    </div><!-- /footer -->
+    
+</div> 
+
+<div data-role="page" id="menu">
+
+   	<div data-role="header">
+    	<a href="#homepage" data-role="button">homepage</a>
+    	<h1>AB - User Login</h1>
+	</div>
+    
+   	<div data-role="content">
+    	<div data-role="content" data-inset="true">
+    		<h3>Autenticazione operatore: OK</h3>      
 		</div>
 	</div>
     

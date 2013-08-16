@@ -1,7 +1,8 @@
 // JavaScript Document
 
-$(document).on('pagebeforeshow', '#login', function(){  
-        $(document).on('click', '#submit', function() { // catch the form's submit event
+$(document).on('pagebeforeshow', '#login', function(){ 	 
+        $(document).on('click', '#submit', function() { 
+		    // catch the form's submit event
         if($('#username').val().length > 0 && $('#password').val().length > 0){
             // Send data to server through ajax call
             // action is functionality we want to call and outputJSON is our data
@@ -19,8 +20,8 @@ $(document).on('pagebeforeshow', '#login', function(){
                         $.mobile.hidePageLoadingMsg(); // This will hide ajax spinner
                     },
                     success: function (result) {
-                            resultObject.formSubmitionResult = result;
-                                        $.mobile.changePage("#menu");
+                         resultObject.formSubmitionResult = result;
+                         $.mobile.changePage("#menu");
                     },
                     error: function (request,error) {
                         // This callback function will trigger on unsuccessful action                

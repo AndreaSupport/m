@@ -2,14 +2,17 @@
 
 $(document).on('pagebeforeshow', '#login', function(){ 	 
         $(document).on('click', '#submit', function() { 
-		    // catch the form's submit event
+		// catch the form's submit event
         if($('#username').val().length > 0 && $('#password').val().length > 0){
             // Send data to server through ajax call
             // action is functionality we want to call and outputJSON is our data
                 $.ajax({
 					url: 'auth.php',
-                    data: {action : 'login', formData : $('#form-login').serialize()}, // Convert a form to a JSON string representation
-                    type: 'post',                   
+                    data: 	{
+								action : 'login', 
+								formData : $('#form-login').serialize()
+							}, // Convert a form to a JSON string representation
+                    type: 'POST',                   
                     async: true,
                     beforeSend: function() {
                         // This callback function will trigger before data is sent
@@ -17,11 +20,11 @@ $(document).on('pagebeforeshow', '#login', function(){
                     },
                     complete: function() {
                         // This callback function will trigger on data sent/received complete
-                        $.mobile.hidePageLoadingMsg(); // This will hide ajax spinner
+                      	$.mobile.hidePageLoadingMsg(); // This will hide ajax spinner
                     },
                     success: function (result) {
-                         resultObject.formSubmitionResult = result;
-                         $.mobile.changePage("#menu");
+                    	resultObject.formSubmitionResult = result;
+                      	$.mobile.changePage("#menu");
                     },
                     error: function (request,error) {
                         // This callback function will trigger on unsuccessful action                

@@ -12,8 +12,9 @@ $(document).on('pagebeforeshow', '#login', function(){
 								action : 'login', 
 								formData : $('#form-login').serialize()
 							}, // Convert a form to a JSON string representation
-                    type: 'POST',                   
-                    async: true,
+                    type: 'POST',
+					async: true,                   
+					cache: false,
                     beforeSend: function() {
                         // This callback function will trigger before data is sent
                         $.mobile.showPageLoadingMsg(true); // This will show ajax spinner
@@ -24,7 +25,11 @@ $(document).on('pagebeforeshow', '#login', function(){
                     },
                     success: function (result) {
                     	resultObject.formSubmitionResult = result;
-                      	$.mobile.changePage("#menu");
+						$.mobile.changePage("#homepage",{
+        					allowSamePageTransition: true,
+        					transition: 'none',
+        					reloadPage: true
+    					});
                     },
                     error: function (request,error) {
                         // This callback function will trigger on unsuccessful action                

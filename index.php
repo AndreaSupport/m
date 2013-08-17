@@ -1,3 +1,6 @@
+<?
+	session_start();
+?>
 <!DOCTYPE html> 
 <html> 
     <head> 
@@ -6,7 +9,7 @@
     <link rel="stylesheet" href="/_G/m/jquery/jquery.mobile-1.3.2.min.css" type="text/css" />
     <script type="text/javascript" src="/_G/m/jquery/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/_G/m/jquery/jquery.mobile-1.3.2.min.js"></script>
-    <script src="/_G/m/index.js"></script>
+    <script src="/_G/m/lib.js"></script>
 </head> 
 <body> 
  
@@ -18,7 +21,11 @@
     </div><!-- /header -->
  
     <div data-role="content">      
-        <p>Questa e' l'homepage.</p>        
+        <p>Questa e' l'homepage.</p>
+        <?
+        echo "u: " . $_SESSION['u'];
+		echo "p: " . $_SESSION['p'];
+		?>        
     </div><!-- /content -->
  
     <div data-role="footer">
@@ -67,7 +74,11 @@
 	</div>
     
    	<div data-role="content">
-   		<h3>Autenticazione operatore: OK</h3>      
+   		<h3>Autenticazione operatore:</h3>
+        <?
+        echo "u: " . $_SESSION['u'];
+		echo "p: " . $_SESSION['p'];
+		?>        
 	</div>
     
    	<div data-role="footer">

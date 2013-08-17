@@ -1,4 +1,5 @@
 <?
+	session_start();
 	if ($_POST['action']=="login") {
 		$results = $_POST['formData'];
 		$perfs = explode("&", $results);
@@ -9,7 +10,7 @@
 			if ($key=="username") { $username=$values; }
 			if ($key=="password") { $password=$values; }
 		}
-		
-		
+		$_SESSION['u']=$username;
+		$_SESSION['p']=$password;	
 	}
 ?>

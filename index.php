@@ -9,10 +9,10 @@
     <head> 
     <title>AB Consulting Group - 02768260362</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="/_G/m/jquery/jquery.mobile-1.3.2.min.css" type="text/css" />
-    <script type="text/javascript" src="/_G/m/jquery/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/_G/m/jquery/jquery.mobile-1.3.2.min.js"></script>
-    <script src="/_G/m/lib.js"></script>
+    <link rel="stylesheet" href="http://www.andreabalboni.com/_G/m/jquery/jquery.mobile-1.3.2.min.css" type="text/css" />
+    <script type="text/javascript" src="http://www.andreabalboni.com/_G/m/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://www.andreabalboni.com/_G/m/jquery/jquery.mobile-1.3.2.min.js"></script>
+    <script src="http://www.andreabalboni.com/_G/m/lib.js"></script>
 </head> 
 <body> 
 

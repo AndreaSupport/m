@@ -1,4 +1,5 @@
 <?
+	// TEST
 	include ("mlib.php");
 	$m=new m;
 	$auth=$m->check();
